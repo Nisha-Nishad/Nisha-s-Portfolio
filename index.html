@@ -39,6 +39,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- Hide Netlify Injected Badge -->
+    <style>
+      #nl-badge-frame,
+      iframe[title*="Netlify" i],
+      iframe[id*="nl-badge" i] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+        width: 0 !important;
+        height: 0 !important;
+      }
+    </style>
+    <script>
+      (function() {
+        var removeBadge = function() {
+          var el = document.getElementById('nl-badge-frame') || document.querySelector('iframe[title*="Netlify" i]');
+          if (el) {
+            el.remove();
+          }
+        };
+        if (window.MutationObserver) {
+          var observer = new MutationObserver(removeBadge);
+          observer.observe(document.documentElement, { childList: true, subtree: true });
+        }
+        document.addEventListener('DOMContentLoaded', removeBadge);
+        window.addEventListener('load', removeBadge);
+      })();
+    </script>
   </head>
   <body class="bg-background text-foreground antialiased selection:bg-secondary selection:text-white">
     <div id="root"></div>

@@ -26,6 +26,21 @@
   --border: #e2e8f0;
 }
 
+/* Suppress Netlify HUD / Badge */
+#nl-badge-frame,
+iframe[title*="Netlify" i],
+iframe[id*="nl-badge" i] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
 html {
   scroll-behavior: smooth;
   font-family: 'DM Sans', sans-serif;

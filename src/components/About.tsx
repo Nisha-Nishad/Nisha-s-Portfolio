@@ -8,7 +8,7 @@ const aboutCards = [
   {
     icon: GraduationCap,
     title: "B.Tech (AIML)",
-    note: "Computer Science & AI",
+    note: "Graduate in CS & AIML",
   },
   {
     icon: CodeXml,

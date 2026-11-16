@@ -24,7 +24,7 @@ A modern, high-performance, and responsive developer portfolio website live at [
   - Dark theme with warm accents, smooth animations, and clean typography.
   - Fully optimized for mobile, tablet, and desktop viewports.
 - **Hero Section:**
-  - Professional title: *Web Developer | AI & ML Engineer* (B.Tech CSE AIML).
+  - Professional title: *Web Developer | AI & ML Engineer* (B.Tech CSE AIML Graduate).
   - Quick contact CTAs and social profile links (LinkedIn, GitHub, Twitter/X, Email).
 - **About Section:**
   - Academic background and technical vision.

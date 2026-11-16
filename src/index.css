@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 0.9rem;
+  /* Modern Indigo & Royal Violet (Developer Palette) by default */
+  --wine: #4338ca;
+  --wine-deep: #090d1a;
+  --rose: #8b5cf6;
+  --blush: #eef2ff;
+  --cream: #f8fafc;
+  --ink: #0f172a;
+  --background: #ffffff;
+  --foreground: var(--ink);
+  --card: #ffffff;
+  --card-foreground: var(--ink);
+  --primary: #4f46e5;
+  --primary-foreground: #ffffff;
+  --secondary: #8b5cf6;
+  --secondary-foreground: #ffffff;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #eef2ff;
+  --accent-foreground: #4338ca;
+  --border: #e2e8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'DM Sans', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wordmark {
+  font-family: 'Parisienne', cursive;
+  letter-spacing: 0.01em;
+}
+
+.section-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Animations delays */
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+.animation-delay-800 {
+  animation-delay: 0.8s;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Hero Tech Badges */
+.hero-tech-badge {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  background: rgba(10, 15, 30, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px 6px 6px;
+  animation: techFloat 5s ease-in-out infinite;
+  display: flex;
+  position: absolute;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  z-index: 5;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.hero-tech-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--secondary);
+  filter: drop-shadow(0 4px 10px var(--secondary));
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.hero-tech-badge:hover .hero-tech-icon {
+  filter: drop-shadow(0 5px 14px var(--secondary));
+  transform: scale(1.12);
+}
+
+.hero-tech-name {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Badge positions */
+.hero-tech-html {
+  animation-delay: 0s;
+  top: 25%;
+  left: 67%;
+}
+
+.hero-tech-css {
+  animation-delay: -1.2s;
+  top: 38%;
+  right: 35%;
+}
+
+.hero-tech-js {
+  animation-delay: -2.4s;
+  top: 58%;
+  right: 43%;
+}
+
+.hero-tech-react {
+  animation-delay: -3.6s;
+  bottom: 60%;
+  left: 53%;
+}
+
+.hero-tech-ts {
+  animation-delay: -4.8s;
+  bottom: 72%;
+  right: 43%;
+}
+
+@media (max-width: 640px) {
+  .hero-tech-html {
+    top: 18%;
+    left: auto;
+    right: 8%;
+  }
+  .hero-tech-css {
+    top: 30%;
+    left: auto;
+    right: 7%;
+  }
+  .hero-tech-js {
+    top: 43%;
+    left: auto;
+    right: 8%;
+  }
+  .hero-tech-react,
+  .hero-tech-ts {
+    display: none;
+  }
+  .hero-tech-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .hero-tech-badge {
+    border-radius: 9px;
+    padding: 5px;
+  }
+  #home .max-w-xl {
+    max-width: 290px;
+  }
+}

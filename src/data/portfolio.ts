@@ -25,7 +25,7 @@ export const personalInfo = {
   title: "Web Developer & AI/ML Enthusiast",
   subtitle: "B.Tech CSE (AIML) Graduate • Web Developer | AI & ML Engineer",
   bio: "I enjoy building intelligent, scalable, and user-friendly applications using modern web technologies, machine learning, and generative AI. Passionate about problem-solving, continuous learning, and delivering high-quality digital solutions.",
-  aboutP1: "I hold a B.Tech degree in Computer Science & Engineering with a specialization in Artificial Intelligence & Machine Learning (AIML). As a Web Developer and Machine Learning Engineer, I enjoy turning complex concepts into responsive, high-performance applications and solving real-world challenges through modern technology.",
+  aboutP1: "Recently, I completed my B.Tech in Computer Science & Engineering (AIML) in 2026. As an enthusiastic Web Developer and Machine Learning Engineer, I am passionate about transforming ideas into high-performance web applications and solving real-world challenges through modern, scalable technology.",
   aboutP2: "I work across both frontend and backend technologies, and I love the process of transforming ideas into robust digital products — writing clean, maintainable code, building structured APIs, and crafting intuitive user experiences.",
   email: "snishanishad@gmail.com",
   phone: "XXXXXXXX47",

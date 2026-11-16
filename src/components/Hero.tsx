@@ -251,7 +251,7 @@ export const Hero: React.FC = () => {
                   style={{ backgroundColor: "var(--primary)" }}
                 />
               </span>
-              <span className="text-xs font-bold text-foreground">Available for Projects</span>
+              <span className="text-xs font-bold text-foreground">Ready to Build &amp; Innovate</span>
             </div>
           </div>
         </div>

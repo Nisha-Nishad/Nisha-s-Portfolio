@@ -93,8 +93,8 @@ export const Footer: React.FC = () => {
               </p>
 
               <p className="mt-3 text-xs sm:text-sm leading-relaxed text-slate-400">
-                Building scalable web applications, designing intuitive user experiences,
-                and exploring AI/ML innovations. Turning innovative ideas into production-ready solutions.
+                Building scalable web applications, engineering responsive interfaces,
+                and exploring AI/ML innovations to deliver robust, production-ready solutions.
               </p>
             </div>
           </div>

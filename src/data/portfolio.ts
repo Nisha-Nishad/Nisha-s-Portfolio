@@ -20,13 +20,13 @@ export const personalInfo = {
   lastName: "Nishad",
   degree: "B.Tech in Computer Science & Engineering (AIML)",
   heroBio:
-    "I build fast, responsive and user-friendly web applications with React, TypeScript and Supabase — and I love blending clean design with AI to turn ideas into real products.",
+    "I build fast, responsive, and user-friendly web applications with React, TypeScript, and modern tools — blending clean architecture with AI to turn innovative ideas into real-world products.",
   roles: "Web Developer | AI & ML Engineer",
   title: "Web Developer & AI/ML Enthusiast",
   subtitle: "B.Tech AIML Student • Web Developer | AI & ML Engineer",
-  bio: "I enjoy building intelligent, scalable, and user-friendly applications using modern web technologies, machine learning, and Generative AI. Passionate about problem-solving, continuous learning, and turning innovative ideas into real-world solutions.",
-  aboutP1: "I'm currently pursuing my B.Tech in AIML while building my skills as a Web Developer and Machine Learning Engineer. I enjoy turning ideas into responsive, functional websites and combining technology with creativity to create engaging digital experiences.",
-  aboutP2: "I work with both frontend and backend technologies, and I like the part of the process where a rough sketch becomes a real interface — clean layouts, readable type, and details that make a site feel considered rather than assembled.",
+  bio: "I enjoy building intelligent, scalable, and user-friendly applications using modern web technologies, machine learning, and generative AI. Passionate about problem-solving, continuous learning, and delivering high-quality digital solutions.",
+  aboutP1: "I am currently pursuing my B.Tech in Computer Science & Engineering (AIML) while honing my expertise as a Web Developer and Machine Learning Engineer. I enjoy turning concepts into responsive, functional applications and combining modern technology with analytical problem-solving.",
+  aboutP2: "I work across both frontend and backend technologies, and I love the process of transforming ideas into robust digital products — writing clean, maintainable code, building structured APIs, and crafting intuitive user experiences.",
   email: "snishanishad@gmail.com",
   phone: "XXXXXXXX47",
   phoneDisplay: "XXXXXXXX47",
@@ -108,7 +108,7 @@ export const projects: Project[] = [
   {
     title: "ShopEase - E-Commerce Platform",
     description:
-      "ShopEase is a modern, responsive full-stack e-commerce web application featuring a seamless shopping experience, curated product categories, dynamic search, interactive cart, wishlist, and smooth order workflows across both desktop and mobile devices.",
+      "ShopEase is a modern, responsive full-stack e-commerce platform that offers a seamless shopping experience, featuring curated product categories, dynamic search, interactive cart management, a wishlist, and smooth checkout workflows across all devices.",
     image: "/assets/shopease-showcase.png",
     imageAlt:
       "ShopEase e-commerce application desktop and mobile responsive showcase",
